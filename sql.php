@@ -1,4 +1,3 @@
-#!/bin/php
 <?php
 /*
  * SQL Database Settings
