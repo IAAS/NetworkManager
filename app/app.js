@@ -5,7 +5,7 @@ app.config(function ($routeProvider) {
 		.when('/',
 			{
 				controller: 'computerController',
-				templateUrl: '/app/partials/computerList.html'
+				templateUrl: './app/partials/computerList.html'
 			})
 		.otherwise({ redirectTo: '/'});
 });
