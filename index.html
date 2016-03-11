@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-ng-app="mainModule">
 	<head>
 		<!-- META -->
 		<meta charset="UTF-8">
@@ -38,10 +38,10 @@
 				<div id="navbar" class="navbar-collapse collapse">
 					<form class="navbar-form navbar-right">
 						<div class="form-group">
-							<input type="text" placeholder="Username" class="form-control">
+							<input type="text" data-ng-model="username" placeholder="Username" class="form-control">
 						</div>
 						<div class="form-group">
-							<input type="password" placeholder="Password" class="form-control">
+							<input type="password" data-ng-model="password" placeholder="Password" class="form-control">
 						</div>
 						<button type="submit" class="btn btn-success">Login</button>
 					</form>
@@ -67,9 +67,20 @@
 			
 				<!-- MAIN -->
 				<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+					<!-- Placeholder for the Partials -->
+					<div data-ng-view></div>
 				</div>
 			</div>
 		</div>
+		
+		<!-- needed JavaSyript Code -->
+		<script src="/app/app.js"></script>
+		
+		<!-- ANGULARJS -->
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"
+			integrity="BPMnzv7+uWH6t3p3zaT3Qj/ckYZnlZepRTJeBRHfBGRBrHhQ2CX19al1HozjDv7r"
+			crossorigin="anonymous"></script>
 		
 		<!-- JQUERY -->
 		<!-- Latest compiled and minified JavaScript -->
