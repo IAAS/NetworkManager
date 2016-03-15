@@ -15,7 +15,7 @@
 							<th>Manager</th>
 						</tr>
 						<tr>
-							<td></td>
+							<td>{{ currentData.length }}</td>
 							<td><input type="text" placeholder="Search:" class="form-control input-sm" data-ng-model="search.mac"></td>
 							<td><input type="text" placeholder="Search:" class="form-control input-sm" data-ng-model="search.name"></td>
 							<td><input type="text" placeholder="Search:" class="form-control input-sm" data-ng-model="search.location"></td>
@@ -25,7 +25,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr data-ng-repeat="computer in computers | filter:search:false" data-ng-class="{'danger':computer.production == '1'}">
+						<tr data-ng-repeat="computer in computers | filter:search:false as currentData" data-ng-class="{'danger':computer.production == '1'}">
 							<td>{{ $index + 1 }}</td>
 							<td>{{computer.mac}}</td>
 							<td>{{computer.name}}</td>
