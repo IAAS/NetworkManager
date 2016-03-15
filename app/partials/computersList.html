@@ -16,7 +16,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr data-ng-repeat="computer in computers" class="{danger: computer.production == 1}">
+						<tr data-ng-repeat="computer in computers" data-ng-class="{'danger':computer.production == '1'}">
 							<td>{{computer.mac}}</td>
 							<td>{{computer.name}}</td>
 							<td>{{computer.location}}</td>
