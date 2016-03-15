@@ -4,6 +4,11 @@
 		<div class="row">
 			<div class="span12">
 				<table>
+					<tr>
+						<th>MAC</th>
+						<th>Name</th>
+						<th>Location</th>
+					</tr>
 					<tr data-ng-repeat="computer in $scope.computers">
 						<th>{{computer.mac}}</th>
 						<th>{{computer.name}}</th>
@@ -14,11 +19,3 @@
 		</div>
 	</div>
 </div>
-
-<!--
-<tr>
-	<th>MAC</th>
-	<th>Name</th>
-	<th>Location</th>
-</tr>
--->
