@@ -16,7 +16,7 @@
 						</tr>
 					</thead>
 					<tbody>
-						<tr data-ng-repeat="computer in computers">
+						<tr data-ng-repeat="computer in computers" data-ng-class="{'info':1}[computer.production]">
 							<td>{{computer.mac}}</td>
 							<td>{{computer.name}}</td>
 							<td>{{computer.location}}</td>
