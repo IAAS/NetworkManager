@@ -17,7 +17,7 @@ $result = mysqli_query($conn, "SELECT * FROM Computer");
 $output = "";
 
 // if there are results
-if (mysqli_num_row($result) > 0) {
+if (mysqli_num_rows($result) > 0) {
 	// build json for every entry
 	while ($row = mysqli_fetch_assoc($result)) {
 		if ($output != "") {
