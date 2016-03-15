@@ -13,6 +13,14 @@
 							<th>Function</th>
 							<th>Manager</th>
 						</tr>
+						<tr>
+							<th><input type="text" data-ng-model="search.mac" placeholder="Search:"></th>
+							<th><input type="text" data-ng-model="search.name" placeholder="Search:"></th>
+							<th><input type="text" data-ng-model="search.location" placeholder="Search:"></th>
+							<th><input type="text" data-ng-model="search.type" placeholder="Search:"></th>
+							<th><input type="text" data-ng-model="search.function" placeholder="Search:"></th>
+							<th><input type="text" data-ng-model="search.manager" placeholder="Search:"></th>
+						</tr>
 					</thead>
 					<tbody>
 						<tr data-ng-repeat="computer in computers" data-ng-class="{'danger':computer.production == '1'}">
