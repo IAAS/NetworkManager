@@ -47,5 +47,4 @@ mysqli_close($conn);
 
 // output json
 echo($output);
-
 ?>
