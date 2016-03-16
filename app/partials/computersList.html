@@ -8,43 +8,46 @@
 						<div class="form-group row">
 							<label for="mac" class="form-control-label col-sm-2">MAC - Address:</label>
 							<div class="col-sm-10">
-								<input type="mac" class="form-control" id="newComputer.mac" placeholder="00:00:00:00:00:00">
+								<input type="mac" class="form-control" data-ng-model="newComputer.mac" placeholder="00:00:00:00:00:00">
 							</div>
 						</div>
 						<div class="form-group row">
 							<label for="name" class="form-control-label col-sm-2">Server Name:</label>
 							<div class="col-sm-10">
-								<input type="name" class="form-control" id="newComputer.name">
+								<input type="name" class="form-control" data-ng-model="newComputer.name">
 							</div>
 						</div>
 						<div class="form-group row">
 							<label for="location" class="form-control-label col-sm-2">Location:</label>
 							<div class="col-sm-10">
-								<input type="location" class="form-control" id="newComputer.location">
+								<input type="location" class="form-control" data-ng-model="newComputer.location">
 							</div>
 						</div>
 						<div class="form-group row">
 							<label for="type" class="form-control-label col-sm-2">Type:</label>
 							<div class="col-sm-10">
-								<input type="type" class="form-control" id="newComputer.type">
+								<input type="type" class="form-control" data-ng-model="newComputer.type">
 							</div>
 						</div>
 						<div class="form-group row">
 							<label for="function" class="form-control-label col-sm-2">Function:</label>
 							<div class="col-sm-10">
-								<input type="function" class="form-control" id="newComputer.function">
+								<input type="function" class="form-control" data-ng-model="newComputer.function">
 							</div>
 						</div>
 						<div class="form-group row">
 							<label for="manager" class="form-control-label col-sm-2">Manager:</label>
 							<div class="col-sm-10">
-								<input type="manager" class="form-control" id="newComputer.manager">
+								<input type="manager" class="form-control" data-ng-model="newComputer.manager">
 							</div>
 						</div>
-						<div class="checkbox">
-							<label><input type="checkbox"> Production Server</label>
+						<div class="form-goup row">
+							<label for="production" class="form-control-label col-sm-2">Production Server:</label>
+							<div class="checkbox col-sm-10">
+								<input type="checkbox" data-ng-model="newComputer.production">
+							</div>
 						</div>
-						<button type="submit" class="btn btn-default">Submit</button>
+						<button type="submit" class="btn btn-inverse btn-block">Submit</button>
 					</form>
 				</div>
 			</div>
