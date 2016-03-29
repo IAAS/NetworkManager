@@ -6,7 +6,12 @@ app.controller('computerController', function($scope, $http) {
 	
 	$scope.dataCollumns = ["mac", "name", "location", "type", "function", "manager", "production"];
 	
-	$scope.tableHeader = ["MAC-Addressen", "Name", "Standort", "Computer-Typ", "Funktion", "Verantwortlicher"];
-	$scope.tableCollumns = ["mac", "name", "location", "type", "function", "manager"];
-	
+	$scope.table = [
+		{ header: "MAC-Addressen", data: "mac" },
+		{ header: "Name", data: "name" },
+		{ header: "Standort", data: "location" },
+		{ header: "Computer-Typ", data: "type" },
+		{ header: "Funktion", data: "function" },
+		{ header: "Verantwortlicher", data: "manager" }
+	];
 });
