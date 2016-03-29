@@ -4,5 +4,5 @@ app.controller('computerController', function($scope, $http) {
 			$scope.computers = response.data.records;
 		});
 	
-	$scope.collumns = ["mac", "name", "location", "type", "function", "manager", "production"];
+	$scope.dataCollumns = ["mac", "name", "location", "type", "function", "manager", "production"];
 });
