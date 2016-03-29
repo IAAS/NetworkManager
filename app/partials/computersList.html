@@ -83,14 +83,9 @@
 					<div class="table-responsive">
 						<table class="table table-hover table-condensed">
 							<thead>
-								<tr>
+								<tr data-ng-repeat="collumn in collumns">
 									<th>#</th>
-									<th>MAC</th>
-									<th>Name</th>
-									<th>Location</th>
-									<th>Type</th>
-									<th>Function</th>
-									<th>Manager</th>
+									<th>{{collumn}}</th>
 								</tr>
 								<tr>
 									<td>{{ currentData.length }}</td>
