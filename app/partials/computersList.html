@@ -32,43 +32,43 @@
 									<div class="form-group row">
 										<label for="mac" class="form-control-label col-sm-2">MAC - Address:</label>
 										<div class="col-sm-10">
-											<input type="mac" class="form-control" data-ng-model="newComputer.mac" placeholder="00:00:00:00:00:00">
+											<input type="text" class="form-control" data-ng-model="newComputer.mac" id="mac" placeholder="00:00:00:00:00:00">
 										</div>
 									</div>
 									<div class="form-group row">
 										<label for="name" class="form-control-label col-sm-2">Server Name:</label>
 										<div class="col-sm-10">
-											<input type="name" class="form-control" data-ng-model="newComputer.name" placeholder="myServer">
+											<input type="text" class="form-control" data-ng-model="newComputer.name" id="name" placeholder="myServer">
 										</div>
 									</div>
 									<div class="form-group row">
 										<label for="location" class="form-control-label col-sm-2">Location:</label>
 										<div class="col-sm-10">
-											<input type="location" class="form-control" data-ng-model="newComputer.location" placeholder="ESXi Server">
+											<input type="text" class="form-control" data-ng-model="newComputer.location" id="location" placeholder="ESXi Server">
 										</div>
 									</div>
 									<div class="form-group row">
 										<label for="type" class="form-control-label col-sm-2">Type:</label>
 										<div class="col-sm-10">
-											<input type="type" class="form-control" data-ng-model="newComputer.type" placeholder="vServer">
+											<input type="text" class="form-control" data-ng-model="newComputer.type" id="type" placeholder="vServer">
 										</div>
 									</div>
 									<div class="form-group row">
 										<label for="function" class="form-control-label col-sm-2">Function:</label>
 										<div class="col-sm-10">
-											<input type="function" class="form-control" data-ng-model="newComputer.function" placeholder="<Project>-Database Server">
+											<input type="text" class="form-control" data-ng-model="newComputer.function" id="function" placeholder="<Project>-Database Server">
 										</div>
 									</div>
 									<div class="form-group row">
 										<label for="manager" class="form-control-label col-sm-2">Manager:</label>
 										<div class="col-sm-10">
-											<input type="manager" class="form-control" data-ng-model="newComputer.manager" placeholder="mustermx">
+											<input type="text" class="form-control" data-ng-model="newComputer.manager" id="manager" placeholder="mustermx">
 										</div>
 									</div>
 									<div class="form-goup row">
 										<label for="production" class="form-control-label col-sm-2">Production Server:</label>
 										<div class="col-sm-10">
-											<input type="checkbox" data-ng-model="newComputer.production">
+											<input type="checkbox" data-ng-model="newComputer.production" id="production">
 										</div>
 									</div>
 									<button type="submit" class="btn btn-inverse btn-block">Submit</button>
